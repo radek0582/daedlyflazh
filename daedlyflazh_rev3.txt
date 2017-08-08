@@ -1,0 +1,1451 @@
+
+
+
+Dodane :
+- ³¹cza liczba npc'ów i postaci
+- buildy pocz¹tkowe postaci
+- scenariusze rozgrywki
+
+Poprawione :
+- wszystkie mapy, zamieniono ramke (linie) na kontynuacjê lokacji. Ramka zosta³a w menusach.
+- wszystkie mapy zape³niono postaciami (g³ównie citizenami i nomadami)
+- wszystkie mapy, zape³niono sklepy i magazyny przedmiotami
+- Mines, wstawi³em Rayo , zamiast drugiego rat kinga
+
+
+Zmiany :
+- wywali³em acziwmenty, na razie nie ma sensu siê tym zajmowaæ
+
+
+!!!!!!!!!!!!!!REV3
+- uzupe³nione sklepy we wszystkich lokacjach
+- zmienione statystyki mobów (w tym CLASS)
+- wpisa³em statystyki SPECIAL MONSTERS
+- dodane ceny sprzêtu w sklepach
+
+
+
+
+
+----DAEDLYFLAZH----
+
+I. NAME
+
+II. PLOT
+
+III. CHARACTERS, CLASS, WEAPONS, ITEMS
+
+IV. MENUS, MAPS, LOCATIONS
+
+V. QUESTS
+
+VI. DLC
+
+::::::
+
+I. DAEDLYFLAZH - roguelike Post-apocalyptic adventure role playing game.
+
+
+############################################################
+#                                                          #
+#					###	 ###	   #
+#                       	       #000#    #000#      #
+# WELCOME IN THE WORLD OF...	      #0000#    #0000#	   #
+#	                	     #000000 ## 000000#	   #
+#	                	     #00000/0000\00000#    #
+# - - - - - - - - - - - - - - - - /  ######I0  0I######    #
+#- - - - - - - - - - - - - - -             I0  0I          #
+#                            /  /          \0000/          #
+#                                           #00#           #
+# ...DAEDLYFLAZH !         /  /            #0000#          #
+#                                         #000000#         #
+#	           	 /  /            ##########        #
+# 			    - - - - - - - - - - - - - - - -#
+# 		       / - - - - - - - - - - - - - - - - - #
+#							   #
+#        (C) copyright 2011 by Radzio and freekE	   #
+#							   #
+############################################################
+
+                    
+
+II. PLOT :
+
+In the future (about year 2069), a nuclear war has transformed the Earth into a radioactive wasteland where the sea has dried up leaving it as a post-apocalyptic desert. In the desert, scavengers patrols (called Nomads) wide areas to geather alloys, junk, tools - anything they could sell to junkyard dealers. The most precious treasure is parts of a military projects that was abandoned. Wasted remains of cyborg army is most profit and desireable stuff. Destroyed, manufuncted and broken cyborgs called CLASS are rare product but they also can start a violent rampage and has become the Nomads (and peoples generaly) prime target for extermination. Save the Americas Wasteland by the word of President or lead the CLASS cyborg army wipe out all humanity.
+
+New York City is largest town in this wasteland. Massive metropolis contains military Corp's, junkies, mutants and scumms.
+
+III. 
+
+CHARACTERS :
+
+BASE:
+
+HP 	: 10/10
+
+XP	: 0
+LEVEL	: 1
+
+ARMOR : 0
+DAMAGE	: 0
+
+MECHANICS
+
+Base weapon damage + Character damage - monster armor = damage deal to monster 
+
+MALE : 20 HP, +2 to char damage, -1 to SCIENCE, +1 to MELEE, +1 to PRIME   					
+FEMALE : 15 HP, +1 to char damage, +2 to SCIENCE, +3 to SIDEARMS,    				
+					
+YOUNGSTER : -5HP, +2 to MELEE, -1 to SCIENCE          			         
+ADULT :	+10 HP, +1 to char damage, +2 to PRIME                           
+ELDER : -5 HP, -2 to MELEE, +4 to SCIENCE
+
+SKILLS:
+
+MIGHT - 0 to 10...1 point adds +1 to character damage
+CONDITION - 0 to 10...1 point adds +2 HP (max +20 HP)
+SIDEARMS - 0 to 10...1 point adds +2 damage to this weapons
+PRIME - 0 to 10...1 point adds +2 damage to this weapons
+MELEE - 0 to 10...1 point adds +2 damage to this weapons
+SCIENCE - 0 to 10...require to various quests. In value of 10, character can disable CLASS cyborgs.
+TRADE - 0 to 10...Each point -1% cheaper goods in shops.+1% to sell items value.
+
+
+O V E R V I E W 
+
+CHARACTER MENU
+############################################################
+#-CHARACTER TAB-                                           #
+#                                                          #
+#name: freek                                               #
+#                                                          #
+#gender: MALE                                              #
+#                                                          #
+#age: YOUNGSTER                                            #
+#                                                          #
+#SKILLS                                                    #
+#might      - 00                                           #
+#condition  - 00                                           #
+#melee      - 00        **********O*V*E*R*V*I*E*W**********#
+#sidearms   - 00        *                                 *#
+#primes     - 00        *HIT POINTS   :10/10              *#
+#science    - 00        *TOTAL DAMAGE :    1              *#
+#trade      - 00        *ARMOUR       :    1              *#
+#                       *GCDC         :    0              *#
+#                       *                                 *#
+#                       ***********************************#
+############################################################
+
+
+CHARACTER MENU (example, later game)
+############################################################
+#-CHARACTER TAB-                                           #
+#                                                          #
+#name: BaBa                                                #
+#                                                          #
+#gender: FEMALE                                            #
+#                                                          #
+#age: ELDER                                                #
+#                                                          #
+#SKILLS                                                    #
+#might      - 05                                           #
+#condition  - 02                                           #
+#melee      - 00        **********O*V*E*R*V*I*E*W**********#
+#sidearms   - 02        *                                 *#
+#primes     - 10        *HIT POINTS   :10/10              *#
+#science    - 03        *TOTAL DAMAGE :    7              *#
+#trade      - 01        *ARMOUR       :   11              *#
+#                       *GCDC         :   84              *#
+#                       *                                 *#
+#                       ***********************************#
+############################################################
+
+GEAR MENU
+############################################################
+#-GEAR SELECTION-                                          #
+#                                                          #
+#                                                          #
+#                                                          #
+#                                                          #
+#                                                          #
+#                                                          #
+#                                                          #
+#                                                          #
+#                                                          #
+#                                                          #
+#                       **************G*E*A*R**************#
+#                       *                                 *#
+#                       *MELEE SLOT   : B-BAT {5}         *#
+#                       *SIDEARM SLOT : 2KRR {9;24/24}    *#
+#                       *PRIME SLOT   : NT9000 {10;1/1}   *#
+#                       *BODY         : RAGS {2}          *#
+#                       *                                 *#
+#                       ***********************************#
+############################################################
+
+GEAR MENU MELEE
+############################################################
+#-GEAR SELECTION-                                          #
+#                                                          #
+# INFO :                DESCRIPTION :                      #
+#                                                          #   
+# Striking distance: 1  It frequently used in, Amiericas   #
+#                       one of favourite games.            #
+# Base damage: 4                                           #
+#                                                          #
+#                                                          #
+#                                                          #
+#                                                          #
+#                       **************G*E*A*R**************#
+#                       *                                 *#
+#                       *MELEE SLOT   : B-BAT {5}         *#
+#                       *SIDEARM SLOT : 2KRR {9;24/24}    *#
+#                       *PRIME SLOT   : NT9000 {10;1/1}   *#
+#                       *BODY         : RAGS {2}          *#
+#                       *                                 *#
+#                       ***********************************#
+############################################################
+
+
+
+GEAR MENU SIDEARM
+############################################################
+#-GEAR SELECTION-                                          #
+#                                                          #
+# INFO :                DESCRIPTION :                      #
+#                                                          #
+# Striking distance: 3  Some say this silenced             #
+#                       personal defence weapon is one of  #
+# Base damage: 2(x3)=6  favorite among this game creators. #
+#                       Fully avtomatic descrete gun have  #
+# Fire 3 rounds burst.  total lack of power but            #
+#                       recompensate in high mobility,     #
+# Contains 24 rounds    silencer and massive rate of fire. #
+# magazine.             **************G*E*A*R**************#
+#                       *                                 *#
+#                       *MELEE SLOT   : B-BAT {5}         *#
+#                       *SIDEARM SLOT : 2KRR {9;24/24}    *#
+#                       *PRIME SLOT   : NT9000 {10;1/1}   *#
+#                       *BODY         : RAGS {2}          *#
+#                       *                                 *#
+#                       ***********************************#
+############################################################
+
+GEAR MENU PRIME
+############################################################
+#-GEAR SELECTION-                                          #
+#                                                          #
+# INFO :                DESCRIPTION :                      #
+#                                                          #
+# Striking distance: 5  Masive damage but lack of mobility.#
+#                                                          #
+# Base damage: 20                                          #
+#                                                          #
+# Granate luncher,                                         #
+# single shoot.                                            #
+#                                                          #
+#                       **************G*E*A*R**************#
+#                       *                                 *#
+#                       *MELEE SLOT   : B-BAT {5}         *#
+#                       *SIDEARM SLOT : 2KRR {9;24/24}    *#
+#                       *PRIME SLOT   : NT9000 {20;1/1}   *#
+#                       *BODY         : RAGS {2}          *#
+#                       *                                 *#
+#                       ***********************************#
+############################################################
+
+Rags : {AV +1}
+
+GEAR MENU BODY
+############################################################
+#-GEAR SELECTION-                                          #
+#                                                          #
+# INFO :                DESCRIPTION :                      #
+#                                                          #
+# Armour value : +1     ...                                #
+#                                                          #
+#                                                          #
+#                                                          #
+#                                                          #
+#                                                          #
+#                                                          #
+#                       **************G*E*A*R**************#
+#                       *                                 *#
+#                       *MELEE SLOT   : B-BAT {5}         *#
+#                       *SIDEARM SLOT : 2KRR {9;24/24}    *#
+#                       *PRIME SLOT   : NT9000 {10;1/1}   *#
+#                       *BODY         : RAGS {2}          *#
+#                       *                                 *#
+#                       ***********************************#
+############################################################
+
+[none] - w zak³adce GEAR je¿eli nie posiadamy
+nazwa broni w GEAR mo¿e mieæ maksymalnie 8 pól. Gdy d³u¿sza, stosowany jest skrót.
+{} - w nawiasach statystyki przedmiotu, po jednej spacji od nazwy
+W tym menu, kursorami PG Up i PG DOWN mozna wybieraæ GEAR - aktywne pole bêdzie podœwietlone kolorem czerwonym (ca³a plansza bia³a lub szara), po wciœniêciu ENTER przechodzimy do inventory
+
+W nawiasie kolejno wyœwietlane
+
+BD - base damage
+SD - striking distance / narazie wykluczone/
+R - rounds 
+AV - armour value
+
+je¿eli coœ nie wystêpuje w danym przedmiocie, nie uwzglêdnia siê. Kolejne statystyki przedzielone znakiem ;
+
+
+INVENTORY MENU
+############################################################
+#-INVENTORY TAB-                                           #
+#                                                          #
+# ******************************************************** #
+# * [none]                                               * #
+# *                                                      * #
+# *                                                      * #
+# *                                                      * #
+# *                                                      * #
+# *                                                      * #
+# *                                                      * #
+# *                                                      * #
+# *                                                      * #
+# *                                                      * #
+# ******************************************************** #
+#                                                          #
+# press Enter to use item, press d to drop item            #
+# press Pg up to move up, Pg dn to move down               #
+# press Q or Esc return to game                            #
+#                                                          #
+############################################################
+
+INVENTORY MENU (later example)
+############################################################
+#-INVENTORY TAB-                                           #
+#                                                          #
+# ******************************************************** #
+# * alloys (x2)                                          * #
+# * ammo (x33)                                           * #
+# * meditkit                                             * #
+# * Cevlar {AV:7}                                        * #
+# * 2000RR {9;24/24}                                     * #
+# * drug                                                 * #
+# *                                                      * #
+# *                                                      * #
+# *                                                      * #
+# *                                                      * #
+# ******************************************************** #
+#                                                          #
+# press Enter to use item, press d to drop item            #
+# press Pg up to move up, Pg dn to move down               #
+# press Q or Esc return to game                            #
+#                                                          #
+############################################################
+
+w nawiasie ilosc danej rzeczy, je¿eli jest jednasz sztuka to tylko nazwa
+10 slotów na przedmioty - nie ma mo¿liwosci aby to zwiêkszyc zmniejszyc 
+GCDC - nie zajmuj¹ slotu w inventory
+
+
+
+
+MONSTERS :
+
+zombie : HP : 20/20, armor:2 , damage:5 (no weapons, musi podejœæ ¿eby zadaæ obra¿enia) Striking distance = 1
+nomad : HP : 10/10, armor:1 , damage:3 (no weapons, musi podejœæ ¿eby zadaæ obra¿enia) Striking distance = 1
+armed nomad : HP : 15/15, armor:2 , damage:6 (pistol, strzela gdy gracz wejdzie w pole widzenia 5 pól od postaci) Striking distance = 5
+junkie : HP : 5/5, armor:0 , damage:1 (no weapons, musi podejœæ ¿eby zadaæ obra¿enia) Striking distance = 1
+scumm : HP :15/15, armor:2, damage:6 (shiv, musi podejœæ ¿eby zadaæ obra¿enia) Striking distance = 1
+henchmen : HP : 25/25. armor:3 , damage 7 (shotgun, strzela gdy gracz wejdzie w pole widzenia 3 pola odpostaci) Striking distance = 4
+soldier: HP : 30/30, armor:10 , damage:12 (machine gun, strzela 2 pociskami w serii) Striking distance = 5
+CLASS: HP : 35/35, armor:5 , damage:15 (Cannon, strzela pojedynczo) Striking distance = 5 
+
+SPECIAL MOSTERS [npc] :
+Heisen - human, HP : 200/200, armor:20,  damage:7, Striking distance = 2
+Bren McGuire - human HP: 100/100, armor:15 damage:5, Striking distance = 3
+Pleasence - human HP:300/300, armor:0, damage:15, Striking distance = 1
+Rayo - human HP:50/50, armor:1, damage:5, Striking distance = 1
+Rat King - animal HP:50/50, armor:0, damage:10, Striking distance = 1
+Bavar - human HP:200/200, armor:10, damage:20, Striking distance = 5 
+D'Morgan - human, HP:50/50, armor:1, damage:5, Striking distance = 1
+Pink - human, HP : 100/100, armor:10,  damage:3, Striking distance = 1
+Jack - human
+Boolfrog - CLASS cyborg, HP: 100/100, armor:15 damage:25, Striking distance = 5 > atlantic accelerator DLC
+Bum - human,  HP : 40/40, armor:0,  damage:11, Striking distance = 1 > atlantic accelerator DLC
+Father Grigori - human HP : 66/66, armor:6,  damage:6, Striking distance = 1
+Shades - CLASS cyborg, HP: 70/70, armor:10 damage:30, Striking distance = 1
+
+
+WEAPONS :
+
+SD - striking distance
+BD - base damage
+R - rounds
+AV - armour value
+
+(AA) WEAPONS
+
+a) sidearms :
+
+- M119 : Favorite sidearm among taekwondo monks, like Steven Seegul. This semi automatic pistol fire lethal doze of lead into opponent. 
+Contains 7 rounds magazine. Striking distance = 3, Base damage : 4
+
+- 6Wayne : Magnum revolver with notable firepower. Old "Wild West" design slightly reminds times when sherrifs rulez the World. 
+Noble 6 rounds drum. Striking distance = 3, Base damage : 3
+
+- 2KRR : Some say this silenced personal defence weapon is one of favorite among this game developers. Fully avtomatic descrete gun have total lack of power but recompensate in high mobility, silencer and massive rate of fire. 
+Contains 24 rounds magazine. Fire 3 rounds burst. Striking distance = 3 , Base damage : 2 (x3) = 6
+
+b) melee :
+
+- axe : Axes are made of copper, bronze, iron or steel. They generally consist of an axe head blade with a handle. Striking distance = 1, Base damage : 6
+
+- shiv : Home made knife, with formed blade from alloys and handle made from duck tape. Its very popular toy among prisoners all over the World. Striking distance = 1, Base damage : 2
+
+- hammer : This tool has only one purpose. Deliver impact to any object. Mostly uses for fitting parts, driving nails...or crush peoples skulls. Striking distance = 1, Base damage : 5
+
+- baseball bat : It frequently used in Amiericas favourite game. Striking distance = 1, Base damage : 4
+
+c) prime :
+
+- Reza : Russian "Snaiperskaya Special" fullautomatic silenced sniper rifle. Giving his operator extreme stealth at the cost of accuracy and damage. 
+Contains 20 rounds mag. 2 rounds burts. Striking distance = 6, Base damage : 4 (x2) = 8
+
+- 16M : Modern America most belowed rifle. This gun wipe out comunists from Nam. 
+Contains 30 rounds mag. 3 round burst. Striking distance = 5, Base damage : 4 (x3) = 12
+
+- Panzor : semi automatic shotgun ideal in tight spaces. Limited range but exceptional deadly power. 
+Spining drum (magazine) contains 15 rounds. Single shoot. Striking distance = 3, Base damage : 10
+
+- 3GM3 : they say, "there was a time when Nazi invades Poland...".This German lead spitting hellfire beast, puts incredible amount of rounds on target. 
+Contains 100 round belt. 10 round burst. Striking distance = 4, Base damage : 1 (x10) = 10
+
+- NT9000 : Masive damage but lack of mobility. Granate luncher, single shoot. Striking distance = 5, Base damage : 20
+
+(BB) TORSO
+
+d) body :
+
+- Rags : {AV +1}
+
+- Jacket : {AV +2}
+
+- Cevlar : {AV +5}
+
+- Coat : {AV +3}
+
+Armour Value {AV}
+
+ad d. ) prices - CENY W SKLEPACH !!!
+
+M119 - 1 unit - 9 GCDC
+6Wayne  - 1 unit - 6 GCDC
+2KRR- 1 unit - 11 GCDC
+
+Rags - 1 unit - 3 GCDC
+Jacket  - 1 unit - 10 GCDC
+Cevlar - 1 unit - 20 GCDC
+Coat - 1 unit - 5 GCDC
+
+axe - 1 unit - 4 GCDC
+shiv - 1 unit - 1 GCDC
+hammer - 1 unit - 3 GCDC
+baseball bat - 1 unit - 2 GCDC
+
+Reza - 1 unit - 17 GCDC
+16M - 1 unit - 20 GCDC
+Panzor - 1 unit - 15 GCDC
+3GM3 - 1 unit - 22 GCDC
+NT9000 - 1 unit - 40 GCDC
+ammo - 10 units - 2 GCDC
+granates - 1 unit - 3 GCDC
+
+meditkit - 1 unit - 5 GCDC
+
+Total cash from quests = 100 GCDC
+
+e) items (bez broni) :
+
+- alloys (pozosta³oœci po CLASS cyborgs, oprócz remains)
+- meditkit (regeneruje full hp)
+- drug (czasowa nieœmiertelnoœæ, na 5 tur, 50% szans na zgon po zakoñczeniu efektu dzia³ania)
+- food (regeneruje hp)
+- GCDC (4) (Golden chip-dollar credits)
+- ammo (jeden rodzaj do wszystkich broni)
+- granates (amunicja do NT9000) - mo¿na w³o¿yæ do slotu melee i rzucaæ, wtedy Striking distance = 2, Damage : mniejszy o po³owê od damage jednego strza³u NT9000
+
+IV. MAPS
+
+
+MAIN
+############################################################
+#							   #
+#					                   #
+#	  				      	           #
+#					                   #
+#					                   #
+#		   			                   #
+#					                   #
+# DAEDLYFLAZH :   >NEW GAME		                   #
+#	   	   LOAD PREVIOUS GAME			   #
+#		   ACHIEVEMENTS			           #
+#		   EXIT GAME				   #
+#		               				   #
+#							   #
+#							   #
+#							   #
+#							   #
+#         (C) copyright 2011 by Radzio and freekE          #
+#	           all rights reserved			   #
+#							   #
+############################################################
+
+ACHIEVEMENTS
+############################################################
+#							   #
+# ACHIEVEMENTS (00 out of 30) :				   #
+#	  						   #
+# 01.							   #
+# 02.							   #
+# 03.		   					   #
+# 04.							   #
+# 05.                    			           #
+# 06.	   	                			   #
+# 07.		                			   #
+# 08.		                        		   #
+# 09.		         				   #
+# 10.							   #
+# <(n)ext page, Esc back to MAINMENU>                      #
+#							   #
+#							   #
+#         (C) copyright 2011 by Radzio and freekE          #
+#	           all rights reserved			   #
+#							   #
+############################################################
+
+ACHIEVEMENTS
+############################################################
+#							   #
+# ACHIEVEMENTS (00 out of 30) :				   #
+#	  						   #
+# 11.							   #
+# 12.							   #
+# 13.		   					   #
+# 14.							   #
+# 15.                    			           #
+# 16.	   	                			   #
+# 17.		                			   #
+# 18.		                        		   #
+# 19.		         				   #
+# 20.							   #
+# <(n)ext page or (p)revious page, Esc back to MENU>       #
+#							   #
+#							   #
+#         (C) copyright 2011 by Radzio and freekE          #
+#	           all rights reserved			   #
+#							   #
+############################################################
+
+ACHIEVEMENTS
+############################################################
+#							   #
+# ACHIEVEMENTS (00 out of 30) :				   #
+#	  						   #
+# 21.							   #
+# 22.							   #
+# 23.		   					   #
+# 24.							   #
+# 25.                    			           #
+# 26.	   	                			   #
+# 27.		                			   #
+# 28.		                        		   #
+# 29.		         				   #
+# 30.							   #
+# <(n)ext page or (p)revious page, Esc back to MENU>       #
+#							   #
+#							   #
+#         (C) copyright 2011 by Radzio and freekE          #
+#	           all rights reserved			   #
+#							   #
+############################################################
+
+NEW GAME
+############################################################
+#							   #
+# DAEDLYFLAZH :	STARTING NEW GAME...			   #
+#	  						   #
+#							   #
+# GENDER : >MALE   					   #
+#	    FEMALE   					   #
+#							   #
+#                        			           #
+#	         	                         	   #
+# 	                				   #
+#       	        				   #
+#		        				   #
+#                                      		           #
+# 							   #
+#	    <choose your gender> 		           #
+#							   #
+#          (C) copyright 2011 by Radzio and freekE	   #
+#		    all rights reserved			   #
+#							   #
+############################################################
+
+NEW GAME NEXT STEP
+############################################################
+#							   #
+# DAEDLYFLAZH :	STARTING NEW GAME...			   #
+#	  						   #
+#							   #
+# GENDER : >MALE   					   #
+#	    FEMALE   					   #
+#							   #
+# CLASS  : >YOUNGSTER          			           #
+#	    ADULT	                         	   #
+# 	    ELDER         				   #
+#       	        				   #
+#		        				   #
+#                                     		           #
+# 							   #
+#	    <choose your age> 		  		   #
+#							   #
+#          (C) copyright 2011 by Radzio and freekE	   #
+#		    all rights reserved			   #
+#							   #
+############################################################
+
+NEW GAME FINAL STEP
+############################################################
+#							   #
+# DAEDLYFLAZH :	STARTING NEW GAME...			   #
+#	  						   #
+#							   #
+# GENDER : >MALE   					   #
+#	    FEMALE   					   #
+#							   #
+# CLASS  : >YOUNGSTER          			           #
+#	    ADULT	                         	   #
+# 	    ELDER         				   #
+#       	        				   #
+#		        				   #
+# NAME   : >_                                 		   #
+# 							   #
+#	    <type name, then press Enter to start> 	   #
+#							   #
+#          (C) copyright 2011 by Radzio and freekE	   #
+#		    all rights reserved			   #
+#							   #
+############################################################
+
+> - kursor wyboru (uzywajac strzalek na klawie przechodzimy do kolejnych wyborów, identycznie jak w Alamut wybór postaci)
+
+$$$ - przy nazwie lokacji oznancza ¿e jest ona skoñczona, questy, wygl¹d, npc i liczba "monsterków".
+
+
+$$$ MAIN WORLD MAP (starting)
+############################################################
+#============================================"=============#
+#=========="""""=========================="""S"============#
+#======""=="""""""""""""================="""""=============#
+#======"""""""""""""""""""""""""==""=="""""""==============#
+#=======""""'""""""""""""""""""=""""""""""""N==============#
+#========""""""""""""""""""""""="""""""""""""==============#
+#========""""""""""""""""""""""""""""""""""""""============#
+#========"""""""""""""""""""""""""""""""""""""=============#
+#========="""""""""""""""""""""""""""""""""""==============#
+#=========""""""""""""""""""""""""""""""""""===============#
+#=========""""""""""""""""""""""""""==="""""===============#
+#===========""""""""""""""""""""""""====="""===============#
+#===========""""""""""""""""""""=========""""==============#
+#==============""""""""""""""""===========""""=============#
+#=================""==="""""""=============="""============#
+#========================""""================""============#
+#=========================""===============================#
+#=========================="===============================#
+#==========================================================#
+############################################################
+S - starting position
+
+$$$ MAIN WORLD MAP (all discover)
+############################################################
+#============================================"=============#
+#=========="""""=========================="""""============#
+#======""=="""""""""""""================="""""=============#
+#======"""""""""""""""""""""""""==""=="""""""==============#
+#=======""""'""""""""""""""""""=""""""""""""N==============#
+#========""""""""""""""""""""""="""""""""""""==============#
+#====A===C"""""""""""""""""R"""""""""""""""""""============#
+#========""""""""""""""G""""""""""""""""""""""=============#
+#========="""""""""""""""""""""""""""""""""""==============#
+#=========""""""""""""""""""""""""""""""""""===============#
+#=========""""""""""""""""""""""""""==="""""===============#
+#==========="""""""T""""""""""""""""====="""===============#
+#===========""""""""""""""""""""========="""M==============#
+#==============""""""""""""""""===========""""=============#
+#=================""==="""""""=============="""============#
+#========================""P"================""============#
+#=========================""===============================#
+#=========================="===============================#
+#==========================================================#
+############################################################
+
+o - symbol lokalizacji (w grze ma byæ zamiast literek lokalizacji, po wejsciu na to pole informacja w message bufferze o nazwie lokalizacji)
+= - sea, woda, nie ma mo¿liwosci wejscia (komunikat)
+" - wasteland
+
+N - NEW YORK CITY
+M - MARINA HARBOUR
+R - OLD REMO
+T - SHELTER TEC
+P - PUERTO ZOMBICO (DLC brak dostêpu)
+G - GRAVEYARD
+C - CLASS CORP.
+A - ATLANTIC ACCELERATOR 
+
+NEW YORK CITY CENTER
+
+.......".........".......t.....T......"....t........".......
+.######"#########"#########"##########"#############"######.
+.#..t.#"#...t.T.#"#....T..#"#....T...#"#...T.......#"+..t.#.
+.###+##"##+######"#+#####+#"#+########"######++#####"##+###.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.######"####+####"####################"#############"....T..
+.#..T.#"#.......#"#####.#.s#s.#......#"#...........#".......
+.#.t..+"#...tT..#"##P##s......###+#..#"#...........+"..Tt...
+.#....#"#.......#"##.++...#.#.+...#..#"#...........#".......
+.##+###"####+####"#########X##########"#############".......
+""""""""""""""""""""""""""s"s"""""""""""""""""""""""""""""""
+.######"#########"......###"###......."######+######"##+##..
+.#..t.#"#...t.T.#"..t...#=#"#=#......."#..t........#"#.t.#..
+.#..T.#"#.......#"...T..#=#"#=#...t..."#...........#"#####..
+.##++##"##+##+###"......###"###......."#############".......
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""S"
+.##+###"#########"#####+###"#+######+#"##+##.####+#."####...
+.#..t.#"+...B...+"#...t...+"#....t...#"#...#.#..t.#."+.t#...
+.#....#"#.......#"#.......#"#..T.....#"+.t.#.+..T.#."#.T#...
+.######"#########"#########>##########"#####.######."####...
+......."........."........."..........".............".......
+
+B - Bren McGuire [npc]
+S - starting position (also exit)
+P - Pleasence,president of NEW YORK CITY [npc]
+" - street
+= - water, fountain
+s - soldier (5)
+t - male citizen (20)
+T - female citizen (czerwone) w grze jako t (15)
+# - wall
++ - door
+X - locked steel door
+> - enter DOWNTOWN
+
+Quest 1:
+Water supply problem
+(Talk to Brenn) Fix water purifer in SHELTER TEC. Bren gives you required equipment. Talk to him.
+Reward : 30 GCDC, key to president mansion (steel door).
+
+Quest 2:
+Anihilate machines.
+(talk to Pleasence) Excelet work with purifer. Please do one more thing to mankind...Destroy core64 terminal in CLASS Corp. location.
+Reward: end game
+
+
+$$$ NEW YORK CITY DOWNTOWN
+
+........".................."........................".......
+"""""""""""""""""""""""""""<##########""""""""""""""""""""""
+........"########"........."#........#"............."..T....
+........"#m.+.#.#"........."+.B......#"............"...t....
+....T....####M..+"...t.T..."#........#"...T........"........
+........"#t.+.#.#"........."#........#".....................
+........"########"..........##########"......"......".......
+.""".""...".""".....""....."..."""".......""..."".....""..".
+........".............................".............".......
+......#####......".....t..."..........".....................
+......+..T+......"..T......"........................".......
+......#...#...........................".....................
+...#####+#####.................####.........................
+.&.#K.#...#.K#............."h..#==#..h".....................
+..&#K.+.T.+.K#.......&...##+##########+##...&..........T....
+&&.#K.#...#.K#......&&.###...#......#...###.&&......t.......
+&&.#####+#####..t...&&.#.#...+.#++#.+...#.#.&&..............
+&&.&.&#...#..........&.#....h#.#.H#.#h....#.&.........T.....
+.&&.&.+.T.+.........&&.#########..#########.&&..............
+..&&&&#####&.......&&&&&&&&&&&&&&&&&&&&&&&&&&&&.............
+&&&&&&&&&&&&&&....&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&............
+
+H - Heisen, drug lord
+h - henchmen (4)
+B - Bavar, "Bavarian Most Wanted" shopkeeper
+> - enter CENTER
+= - fountain
+" - street
+# - wall
+m - Moom, pleasure cyborg
+M - Gina, 
+T - female citizen (czerwone) w grze jako t (10)
+t - male citizen (niebieskie) (5)
+K - meditkit (6 units)
+
+W sklepie Bavara :
+ammo - 10 units
+axe - 1 unit
+shiv - 1 unit
+granates - 5 units
+Reza - 1 unit
+16M - 1 unit 
+Panzor - 1 unit
+3GM3 - 1 unit 
+NT9000 - 1 unit 
+
+
+QUEST 1 : Transaction.
+(talk to Heisen). Dostarczyæ przesy³kê Pink'owi w Old Remo. W inventory pojawia siê "Sealed package". Po rozmowie z Pinkiem, wróciæ do Heisena i porozmawiaæ. Reward : 20 GCDC, +1 SCIENCE
+
+$$$ OLD REMO
+
+.................................&&&.&&&&.&&&.&&.&&&........
+.'''.&#####'''#''''&&.....###...&&#######&&&###########...S.
+.'''.&#.T.#'''#''''&&....##B##...&#KKKKK#.&.#...#.#.#.#.....
+####..##+##'''#''''&&..####.####..#.....#...###X#X#.#.#.....
+#..#.&#..t#'''#####...##.#.....##.#.....#...###.....x.#.&...
+#.t+..+.T.#&..#T..#...##+#h.T.h.#.###.###...#.X.T.F.###.&...
+####..#####&..#.t.#...#..+......#.#.D...#...####.....##.....
+..............#+###...#####+#####.###+###......###+###......
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.&&&&.."....##+##...##+###.....######+######...###....".&...
+..&&&&."...##...##..#....#.....#....#.#....#...#=#....".&...
+...&&&&"...#.T.t.#..###+##..T..#......C....#...###....".....
+##....."...#.....#..##..##.....#....#......#......T...".....
+###...."...##.R.##...####......#############..........h"h...
+#^##..".....##_##....''''...t..........#######........#+#...
+#^^#M".&&....###.....''''.............##..#..#.......##.##..
+#^^^##..&&....#.....&..&...&&...&&...###..#..+......&#.T.#&.
+#^^^^##..&&..###...&&&&&&&&..&&&&.&...##..+..#.'''.&&#.P.#&.
+#^^^^^##..&&&.#...&&.&.&&&&.&&&&.&.&&..#######.'''&&&#####&&
+#########........&&&&.&&&.&.&&&.&&&&&&............&&.&&&&.&&
+
+M - mines entrance
+^ - mountains
+" - road
+S - starting position (also exit)
+P - Pink, drug lord wannabe
+h - henchmen (4)
+B - Bob, bartender
+F - Flint Westwood
+C - Mustacho,salesman
+X - locked cell
+x - locked door
+K - meditkit
++ - door
+D - Doc, owner of drug store
+R - Carl,priest
+T - female citizen (czerwone) w grze jako t (10)
+t - male citizen (niebieskie) (5)
+_ - altar
+' - farm
+& - tree
+= - whell
+# - wall
+
+W sklepie Mustacho :
+M119 - 1 unit
+6Wayne  - 2 unit 
+ammo - 5 units
+Rags - 1 unit
+Jacket  - 1 unit
+Coat - 1 unit
+axe - 1 unit
+shiv - 1 unit
+hammer - 1 unit
+baseball bat - 1 unit 
+2KRR- 1 unit
+Cevlar - 1 unit
+
+
+QUEST 1 : Solve friends issue.
+(talk Flint Westwood). Pomoc w rozwi¹zaniu sporu miêdzy Carlem a Bob'em. Trzeba porozmawiaæ z jednym i drugim a nastêpnie :
+- Bob w zamian za dostarczenie mu alloys zobowi¹zuje siê do pomocy przy naprawie o³tarza w koœciele
+- Carl prosi o przekonanie Boba do tego by pomóg³ w naprawie o³tarza w koœciele
+
+(talk Flint Westwood). Reward : 6Wayne
+
+QUEST 2 : Hunt down serial killer.
+(talk Flint Westwood after Mines Quest 2). "Yeah i known this son of a bitch, its D'Morgan a fellow citizen, please put him on the ground". 
+Po zabiciu powrót do Filnta i rozmowa. Reward : 30 GCDC
+ 
+
+$$$ MINES
+
+^^^^^^^^^^^^^^^^^^^####^####^^^^^^^^^^^^#^^^^^^^^^^^^^^^^^##
+^####^^^^^#######^^^##^^^##^^#######^^^^^#^^^^^^^^^^^^^^^###
+^#S.##^^###.....#^^^^##^##^^^#...r.#^^^^^^#^^^^^^^^^^^^^#^##
+^##..#^^#...##..###^^^###^^^^#.###r#######^#^^#^^^#^^^##^^^#
+^^##.#^^#...##....#^^^^#^^^^^#.#^#...rr..##^####^###^##^^^^^
+^^^#.#^^###.##....#^^^^^^^^^^#r#########.r##^#########^^^^^^
+^^^#.##^^^#.##..###^^^^^^^^^^#....####^##.r##^#######^^^^^^^
+^^^#..##^^#.##..#^^^^^^^^^^^^###.....#^^##..#^^#####^^^^^^^^
+^^^##..##^#.#..##^^^^^^^^^^##^####...#^^^##r#^^^###^^^^^^^^^
+^^^^##..#^#.#..##^^####^^#######^#.###^^^^#.#^^^^#^^^^^^^^^^
+^^^^^#..#^#.#..#####..####....##^#.#^^^^^^#.#^^^^^^^^^^^^^^^
+^^^^^#..###.#.####.......#.Y..##^#.#^^^^^^#r#^^^^^^^^^^^^^^^
+#^^^^#......#.#^#..#####.......#^#.#^^^^^^#.#######^^^^^^^^#
+##^^^#####..#.#^#..#^^#####.####^#.#^^^^^^#r##.######^^^^^##
+###^^^^^^#.##.#^#.##^^^^^##.#^^###.#^^^^^^#..R.##...#^^^^#^^
+#^##^^^^^####.###.#^^^#^^^#.#^^##..#^^^^^^####.#.H..#^^^#^^^
+#^^##^^^^^^^#.....#^^#^#^^#.####...#^^^^^^^^^#......#^^#^^^^
+#^^^##^^^^^^#######^#^^^#^#.......##^^^^^^^^^#.##.###^#^^^^^
+#^^^^##^^^^^^^^^^^^#^^^^^##########^^^^^^^^^^######^^#^^^^^^
+#^^^^^##^^^^^^^^^^#^^^^^^^#^^^^^^^^^^^^^^^^^^^^^^^^^#^^^^^^^
+#########^^^^^^^^##^^^^^^^^#^^^^^^^^^^^^^^^^^^^^^^^##^^^^^^^
+
+Y - Rayo
+H - remains of Helc, brother of Rayo
+S - starting position (also exit)
+^ - rocks
+# - wall
+r - rat (10)
+R - Rat King [npc]
+
+(talk to Rayo)
+QUEST 1 : KILL RAT KING
+Done deal with monster. Trzeba pokonaæ Rat Kinga.
+po tym rozmowa z Rayo. Reward : +10 GCDC, meditkit zlecenie Questu 2
+
+QUEST 2 : REMAINS UPON CROSS
+Heal Helc body. (Use meditkit on Helc remains)
+Reward : Axe
+
+Po tych dwóch questach, gdy porozmawiamy z Helc'iem, mówi nam ¿e to nie Rat King go rani³ tylko "Young man called himself, somethin' like "Di Lore Gan. Last thing i remeber he says "soon you ground on 
+oceans bottom". Odbycie tej rozmowy jest konieczne do odblokowania 2 Questu u Flint Westwood)
+
+$$$ SHELTER TEC
+
+##############################.......&&.......&.............
+##############################=============&&....&&&...&.===
+##==============WWW############....&....&&======..&..&.=====
+##........#####+####........####............n..=========....
+##+######+#####+####.#####..#####...m...........&&.....&....
+##.#...#N...#.....##....##..######.....&....................
+##.#...#....#.....####.###..#####..........&...&.........&..
+##.#...+....+.....###..##...####.....n.............m........
+##.#...#....##+#####..##..#####....n......n......&..........
+##.#####.....#..###..##..#######n............&..............
+##.#.........+....+.##..##..+.+......&................&...S.
+##.#.....#...#..#####..###..####n.........&....&...&........
+##.#.....#...#+#####..####..###......n......................
+##+###########....##.#####..####............................
+##.##..+..........##.#####..#####..........&....m.....&.....
+##.##..#..........##.#####..######....&&....................
+##+#####+##+##+##+##..###..######.................&.........
+##+###...#...#..#.###..#..######.....&...n...........m......
+##.t##...##+##..#.####...######..............&...........&..
+######...#...#..#.############...&.....&....................
+##############################..................&&&&........
+
+t - Water Purifer Machine terminal 
+W - Water Purifer
+n - nomads male (8)
+m - nomads female (4)
+N - Wise Arse, eldery nomad
+S - starting position (also exit)
+& - tree
+= - river
+
+QUEST 1 :
+
+(talk to Wise Arse). Could you fix our purifer ? We need it... (need SCIENCE >= 3, and part from Brenn).
+
+
+$$$ MARINA HARBOUR
+
+============================================================
+============================================================
+============================================================
+============================================================
+============================================================
+============================================================
+============================================================
+==========================^####=============================
+==========================o+@.#=============================
+==========================V#..#=============================
+===================/\======##+#=============================
+===================II======#..#=============================
+=============^^====II======#+##=============================
+=======^=====II====II===####..#=#=#=#=#=#=#=#=#=#=#=#=#=####
+=======I=====II====II===#&&.....................t.......&&##
+#######V=####VV####\/####.........#&...t........###########.
+##&&&&####&&####&&####............#&&&......T...#...#.....#.
+..........t..T..............T.....#&&&&&........+.E.#.....#.
+..t...&...........................####..........#...+.....#.
+...............&...........S....................###########.
+............................................................
+
+o - the boat
+E - Jack, shopkeeper boatman
+@ - D'Morgan (po komendzie talk mówi "Leave me alone, a need to fix my boat"
+S - starting position (also exit)
+= - sea
++ - door
+& - tree
+T - female nomad (czerwone) w grze jako t (3)
+t - male nomad (niebieskie) (4)
+
+^
+I - ³odzie (nie do u¿ytku), po komendzie 'l'ook informacja
+V
+
+Quest > gdy Quest 2 z Old remo jest aktywny, trzeba go zaatakowaæ w przypadku rozmowy nie ma zmiany wypowiadanego tekstu.
+
+C - CLASS CORP.
+
+^^^^^^##############^^^^^^^^^^^^^^^^^^^^....................
+^^^^^################^^^^############^^...........N.........
+^^^^##..#...C...#...##^^^#..........#^.....N................
+^^^##...#.......#....##^^#......#####.................N.....
+^^^##...####+####....##^^###..#..#..#......N................
+^^##....#.......+.....##^^^#..##.#..#............N..........
+^^##....###.....#.....##^^^#...#.#..#####...................
+^##.....#.###...###+#..#####.###....#...#...................
+##...##+#.#.#...#...#####......######C.C#...................
+######....#.##+##.C.....+..C#C..#.#.##C........N............
+##6.+X..C.+c....+..CCC..+..###......++.C#C..........N.....S.
+######....#.##+##.C.....+..C#C..#.#.##C.........N...........
+##...##+#.#.#...#...#####......######C.C#...N...............
+^##.....#.###...###+#..#####.###....#...#...................
+^^##....###.....#.....##^^^#...#.#..#####......N.......N....
+^^##....#.......+.....##^^^#..##.#..#...............N.......
+^^^##...####+####....##^^###..#..#..#.......................
+^^^##...#.......#....##^^#......#####....N..................
+^^^^##..#...C...#...##^^^#..........#^..........N...N.......
+^^^^^################^^^^############^^.....................
+^^^^^^##############^^^^^^^^^^^^^^^^^^^^....................
+
+S - starting position (also exit)
+6 - core64 terminal
+C - CLASS cyborg (if You broke down Core64 turn hostile, if fix stays neutral) (20)
+c - Shades, CLASS megamind (if You broke down Core64 turn hostile, if fix reward) (1)
+^ - mountains 
++ - door
+X - locked door
+N - nomad body (15) ( w grze jako % )
+
+
+QUEST 1 : BROKEN MAINFRAME
+(talk to Shades) Human, 
+Reward : Axe
+
+$$$ GRAVEYARD
+
+............................................................
+.##################################################.........
+##..............##&..................#........&&&####.......
+.#.g..g..g..gz.g.#&&....#...........###.......&&&##.........
+##..............##&....###...........#........&&&#..........
+.#........z......#&&.#######.......#####......&&&##.........
+##.gz.g..g..g..g##&....###.........#._.#......&&&###........
+.#...............#&&....#.........##.@.##.....&&&#..........
+##.g..g..g..g..g##&.....#........####+####....#####.........
+.#....z......z...##########......#.......######...+.........
+##z..............X...............#.......##.......+.........
+.#.g..g..g..g..g.##########......####+#####.###...+.........
+##...z..........##&.....#.................#.#.#####.........
+.#........z...z..#&&....#................##.#.&&&#..........
+##.g..g..g..g..g##&....###..................#.&&&###........
+.#...............#&&.#######.............####.&&&##.........
+##....z.........##&....###....................&&&#..........
+.#.g..g..g..g..g.#&&....#.....................&&&##.........
+##..............##&?..........................&&&####.......
+.##################################################.......s.
+............................................................
+
+z - zombie (10)
+X - locked door (key from the Father Grigori)
+@ - Father Grigori (100/100 HP, DAMAGE:5, ARMOR:2)
+_ - altar
+g - grave
+S - starting position (also exit)
+? - amulet
+
+GRAVEYARD :
+(talk to Grigori)
+
+QUEST 1 : LOST CRUCIFIX
+Find lost amulet Reward : Add +2 HP permanent, open Quest 2 (po rozmowie otrzymujemy klucz do bramy cmentarza)
+
+QUEST 2 : CLEANSING.
+Clean up Graveyard from walking dead. (Otrzymuje siê go w pierwszej rozmowie z Father Grigori i wype³nieniu Questu 1). Reward : 10 GCDC
+
+
+$$$ PUERTO ZOMBICO
+
+..#.......#.#...............................#.#.#........#..
+.#.#.....#................#.#.#.#.....#..#.........###...#..
+..#....z...#..#.##.##...........#...zz#............###...z..
+....zz....................#.....#......##....X...z........#.
+..............##..z.#.....#####.....................X.......
+....#.##.##.z.#.....#.................z..z.......X..........
+.......#..#....#...#...z......z..........#............#####.
+...z#...#.#.............................#.#............XXX#.
+...............z...z....#/##.....###.....#..z....X..#..XXX#.
+....###.#+#............#...#..###...###.......z.....#..X.X#.
+...................z....#.....#..zz.................#XXX..#.
+.....z.....z...z.......#.##...#...........z.........#XXX..#.
+................................../##............#######+##.
+#####......................z..................z..#*:+.....#.
+##.#....#.###.z...#.##.............z.............#L:#.....#.
+#.z./......z#.....#..#...#.#+.#.......#..z.....######.....#.
+####....#.#.#..z....#....#..zz#......##........./++.....#+#.
+........#...#..........z.#........z..##........####.##+##.#.
+........###.....zz.......#.#.##.......#....z.....#..#***#M#.
+.S........#..........#.#.........................##########.
+........#............#.#......#.......#......#..............
+
+z - zombie (40)
+S - starting position (also exit)
++ - door
+X - opened barrel with toxic waste
+/ - open door
+& - tree
+# - ruins
+M - Marston,male insane soldier
+L - gun (16M)
+: - ammo (5x5 rounds)
+* - GCDC (5) (Golden chip-dollar credits)
+
+QUEST 1 : Redemption.
+Find Marston. Quest automatycznie przsydzielany po wejœciu do lokacji. Zostaje wykonany gdy zabijemy wszystkie zombie i porozmawiamy z Marstonem. Reward : 10 GCDC, klucz do dwóch zbrojowni
+
+$$$ ATLANTIC ACCELERATOR
+
+============================================================
+============================================================
+==##########===========================###==================
+==##.%...#.#===========================#n#==================
+==#..##..#.################============#.#==================
+==#.##%#...+....%.........#============#.#===###============
+==#.#/.#.#.######.#######.#.##########=#.#===#.#============
+==#%#####..#====#.#=====#.#.#........#=#.#===#.#============
+==#.#%.%#.##====#.#=====#.#.#."....".#=#.#===#.#============
+==#.+.C%#..#===##.#######.###."....".###.#####.#========^===
+==#.#%.%##%#===#..............""""""....%..............So===
+==#.#####..#===##.#######.###."....".####.####.#========V===
+==#.....####====#.#=====#.#=#."....".#==#.#==#.#============
+==#####...##====#.#=====#.#=#........#==#.#==#.#============
+==#......########.#######.#=##########==#.#==#.#============
+==#.%##..#.+...........%..#=============###==#.######=======
+==##.#####.################==================#.......=======
+==#........#=================================########=======
+==##########================================================
+============================================================
+============================================================
+
+S - starting position (also exit)
+. - platform
+" - heli pad
+C - Boolfrog, the haywire CLASS cyborg
+n - Bum, the nomad male hobo
+% - corpse, dead body (10)
+/ - shiv (cover with blood)
+
+QUEST 1 : What happens here?
+Talk (chat) to an Bum and Boolfrog. Figure out whats happens in AA oil rig. Quest wpisany do quest loga automatycznie po wejœciu do tej lokacji. Po rozmownie z Bum i Boolfrog quest zostaje zaliczony. Pojawia siê quest 2. Reward : 5 GCDC
+
+QUEST 2 : Human or Machine?
+Analyzing gathered information (maybe murder tool). Decide who is guilty for murder Oil Rig crew. Talk to Father Grigori, from graveyard about Bum. Po spe³nieniu dwóch warunków podniesienia shiv i rozmowie z Grigori'm. Quest 2 zostaje zaliczony a Quest 3 siê pojawia. Reward : 10 GCDC
+
+QUEST 3 : Bad dog has to go.
+Kill Bum, former Master of Oil Rig who lost his mind and murdered all of his crew. Po zabiciu Buma nagroda , QUest 3 zakoñczony. Reward : shiv, 20 GCDC
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! lokacja testowa !!!!!!!! TEST !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+TOWER OF DESPAIR
+
+====..&&..&.&&&.&.&..&&.....................................
+&====..&.&..&..&...&.&.&&...................................
+..====....&..&..&&.&.&......................................
+..====&.&...&..##########...................................
+&.====....&...##........##..................................
+..====&.&&...##..........##.................................
+..====...&&.##............##................................
+&&====.&..&&#..............#................................
+&.====...&.................#................................
+..====..&&..###..........###................................
+.&.====....&#>.............X"""""""""""""""""""""""""""""""S
+.&.====.&&..###..........###...#++#.........................
+&.&.====.&&................#...#@.#.........................
+.&.&====....#..............#...#..#.........................
+...====..&..##............##...####.........................
+.&.====.&....##..........##.................................
+...====.&&.&..##........##..................................
+.&.====.&..&&..##########..&&&..............................
+..&====.........&..&.....&..................................
+&&.====&..&...&&....&&.&&..&...&............................
+...====.&...&&...&&......&&..&..&...........................
+
+# - wall
+" - road
++ - metal door
+= - water
+X - locked hatch
+> - stairs up
+S - starting position (exit)
+@ - Grunt, soldier [npc]
+
+TOWER OF DESPAIR LEVEL 1
+
+.===&.&&..&.&&&.&.&..&&.....................................
+&.===&.&.&..&..&...&.&.&&&..................................
+.&&===....&..&..&&.&.&.&....................................
+&&.===&.&...&..####.#####...................................
+&..===....&...##........##..................................
+.&&===&.&&...##..........##.................................
+...===...&&.##............##................................
+&&.===.&..&&#..............#................................
+&..===&..&.................#................................
+...===&.&&..###..........###................................
+.&..===....&#S............>#""".""".""""""""."""""."""".""..
+.&..===.&&..###..........###...#+#..........................
+&.&..===.&&................#...#.#..........................
+.&.&.===..&&#..............#...###..........................
+.&&.===..&..##............##................................
+.&..===.&....##..........##.................................
+&&..===.&&.&..##........##..&...............................
+.&..===.&..&&..####.#####..&&&..............................
+..&.===&&..&&...&..&..&..&....&.............................
+&&..===&..&...&&.&&..&..&&..&...............................
+.&&.===.&...&&.&.&&..&.&.&&..&..............................
+
+# - wall
+" - road
++ - metal door
+= - water
+S - starting position (stairs down)
+> - stairs up
+
+
+TOWER OF DESPAIR LEVEL 2
+
+&.==&.&&..&.&&&.&.&..&&.....................................
+&..==&.&.&..&..&...&.&.&&&..................................
+.&&.==.&..&..&..&&.&.&.&....................................
+&&..==&.&.&&&..####.#####...................................
+&...==.&..&.&.##........##..................................
+.&&.==&.&&.&.##..........##.................................
+&.&&==.&&&&.##............##................................
+&&..==.&..&&#..............#................................
+&&&.==&..&.................#................................
+&&.&==&.&&..###..........###................................
+.&...==.&&.&#>............S#".".""".""."".""."".""."".".""..
+.&.&&==.&&..###..........###...#+...........................
+&.&..&==.&&................#...##...........................
+.&.&..==&.&&#..............#................................
+&&&..==&.&..##............##................................
+.&&&.==.&.&&.##..........##.................................
+&&.&&==.&&.&..##........##..&...............................
+.&..&==.&..&&..####.#####..&&&..............................
+..&..==&&&.&&.&.&..&..&..&.&&.&.............................
+&&.&.==&..&...&&.&&..&&.&&..&..&............................
+.&&.&==.&.&.&&.&.&&..&.&.&&..&..............................
+
+# - wall
+" - road
++ - metal door
+= - water
+S - starting position (stairs down)
+> - stairs up
+
+TOWER OF DESPAIR TOP
+
+&.&=&.&&&.&.&&&.&.&.&&&.....................................
+&&&&=&.&.&.&&..&&&.&.&.&&&..................................
+.&&.&=.&..&..&&.&&.&.&.&....................................
+&&.&&=&.&&&&&..####.#####...................................
+&.&&&=.&..&.&.##........##..................................
+.&&.&=&.&&.&.##..........##.................................
+&.&&&=.&&&&.##............##................................
+&&..&=.&..&&#..............#................................
+&&&.&=&.&&&................#................................
+&&.&&=&.&&&.###............#................................
+&&&&.&=&&&.&#S..........@..#".".".".."..".."..".."..".".."..
+.&.&&&=.&&..###............#...#............................
+&.&..&&=.&&................#................................
+.&.&..&=&.&&#..............#................................
+&&&..&=&.&..##............##................................
+.&&&.&=.&.&&.##..........##.................................
+&&.&&&=.&&.&..##........##..&...............................
+.&..&&=.&..&&..####.#####.&&&&..............................
+&.&&&&=&&&.&&.&.&&.&..&&&&.&&.&.............................
+&&.&.&=&&&&.&.&&.&&&&&&.&&.&&&.&............................
+.&&.&&=.&.&.&&.&.&&&.&.&.&&&.&&&&...........................
+
+# - wall
+" - road
++ - metal door
+= - water
+S - starting position (stairs down)
+@ - Shubb, alchemic [npc]
+
+QUEST 1:
+Nomads attacking!
+(talk to Grunt) Please go to the tower, and stop nomads before they kill Shubb. He is a great sciencist and alchemist,You must protect him at all cost.
+I open the hatch, hurry up...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! KONIEC TESTU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+VI. DLC :
+
+a) PUERTO ZOMBICO
+
+b) ATLANTIC ACCELERATOR
+
+c) TOWER OF DESPAIR (testowo)
+ 
+
+
+
+Za³o¿enia finalne :
+
+- menu, main, inventory, questlog etc. to szare/czarno-biale ascii
+- gra kolorowe ascii
+- nic nie jest generowane losowo, wszystkie lokacje,npc,przeciwnicy,damage i cala mechanika jest z gory ustalona
+- brak losowych zdarzen na mapie glownej
+- kazda lokacja ma pozycje startowa,koncowa,zejscia etc. i tylko z nich mozna korzystaæ
+- jedna linia fabularna (kilka questow+dwa zakonczenia+specjalne zakonczenie), oraz kilka subquestow ktore mozna otrzymywac wykonywac niezaleznie od g³ównych
+- brak huda (albo minimalistyczny typu hp,damage,defence)
+- rozwinieta karta postaci, questów oraz inwentarza
+- brak glodu, hungry nieuwzglednione
+- message line na dole - jedna linia kontynuowana spacj¹
+- jezyk gry angielski
+- komenda l'ook uwzgledniona
+- zdobycie achievementa zostaje ukazane w message line na kolor ¿ó³ty
+- raz zdobyty achievement zostaje zapamietany i zapisany w menu g³ównym gry, w zakladce ACHIEVEMENTS
+- na pocz¹tku zak³adka ACHIEVEMENTS wyœwietla w kolorze szarym tylko nazwy, po zdobyciu jakiegokolwiek zostaje zaznaczona na z³oto i po zaznaczeniu jej pokazuje co spowodowa³o odblokowanie acziwa (np.A DUTY CALL ? - po zdobyciu wyœwietla dodatkowo "-Kill at least one enemy with all sidearms weapons.")
+- hp regeneruj¹ siê tylko na mapie g³ównej
+- wyjscie z lokalizacji automatycznie przywraca hpki wszystkich npców do stanu poczatkowego
+- obrazenia zawsze wynosza tyle samo, zawsze sie trafia (wrogowie takze)
+- przejscie g³ównego w¹tku gry powinno zajmowac nie wiêcej niz 30-45 minut
+- musi byæ kilka scie¿ek postêpowanie (przyjmowanie questow, gromadzenie kasy na zakup broni etc.) 
+- g³ówny w¹tek liniowy /nastêpuj¹ce po sobie questy/ 
+- poboczne zadania nie konieczne, do ukonczenia gry 
+
+
+@@@ ZLICZENI (podliczona iloœæ potworków) BEZ DLC:
+
+MONSTERS :
+
+zombie : 10
+
+nomad /total/ : 19
+nomad male: 8 + 4 = 12
+nomad female: 4 + 3 = 7
+ 
+citizen /total/: 65
+citizen male: 20 + 5 + 5 = 30
+citizen female: 15 + 10 + 10 = 35
+ 
+henchmen : 4 + 4 = 8
+
+soldier: 5
+
+CLASS: 20 
+
+
+
+SPECIAL MOSTERS [npc] : (iloœæ : 13)
+Heisen - human, HP : 200/200, armor:20, damage:
+Bren McGuire - human HP: 100/100, armor:15, damage:
+Pleasence - human, HP: / , armor: , damage:
+Rayo - human, HP: / , armor: , damage:
+Rat King - animal, HP: / , armor: , damage:
+Bavar - human, HP: / , armor: , damage:
+D'Morgan - human, HP: / , armor: , damage:
+Pink - human, HP: / , armor: , damage:
+Jack - human, HP: / , armor: , damage:
+Boolfrog - CLASS cyborg, HP: / , armor: , damage:
+Bum - human, HP: / , armor: , damage:
+Father Grigori - human, HP: / , armor: , damage:
+Shades - CLASS cyborg, HP: / , armor: , damage:
+
+SCIE¯KA QUESTOWA :
+
+MAIN:
+
+NEW YORK CITY DOWNTOWN : QUEST 1 > SHELTER TEC : QUEST 1 > NEW YORK CITY DOWNTOWN : QUEST 2. Rozmowa z prezydentem koñczy grê.
+
+
+SIDE QUEST:
+Dowolnie mog¹ byæ wykonywane
+
+
+BULIDY POCZ¥TKOWE :
+
+CHARACTERS :
+
+BASE:
+
+HP 	: 10/10
+
+XP	: 0
+LEVEL	: 1
+
+ARMOR : 0
+DAMAGE	: 0
+
+MECHANICS
+
+Base weapon damage + Character damage - monster armor = damage deal to monster 
+
+MALE : 20 HP, +2 to char damage, -1 to SCIENCE, +1 to MELEE, +1 to PRIME   					
+FEMALE : 15 HP, +1 to char damage, +2 to SCIENCE, +3 to SIDEARMS,    				
+					
+YOUNGSTER : -5HP, +2 to MELEE, -1 to SCIENCE          			         
+ADULT :	+10 HP, +1 to char damage, +2 to PRIME                           
+ELDER : -5 HP, -2 to MELEE, +4 to SCIENCE
+
+SKILLS:
+
+MIGHT - 0 to 10...1 point adds +1 to character damage
+CONDITION - 0 to 10...1 point adds +2 HP (max +20 HP)
+SIDEARMS - 0 to 10...1 point adds +2 damage to this weapons
+PRIME - 0 to 10...1 point adds +2 damage to this weapons
+MELEE - 0 to 10...1 point adds +2 damage to this weapons
+SCIENCE - 0 to 10...require to various quests. In value of 10, character can disable CLASS cyborgs.
+TRADE - 0 to 10...Each point -1% cheaper goods in shops.+1% to sell items value.
+
+Je¿eli chodzi o SKILLS to na razie nie mam pojêcia ile ich daæ na start, to mo¿na wrzuciæ na samym koñcu - jak ju¿ bêdzie wiadomo w któr¹ stronê iœæ.
+
+
+AD.1 MALE YOUNGSTER
+25 HP, +2 char damage, -2 SCIENCE, +3 to MELEE, +1 to PRIME
+
+AD.2 MALE ADULT
+40 HP, +3 to char damage, -1 to SCIENCE, +1 to MELEE, +3 to PRIME
+
+AD.3 MALE ELDER
+25 HP, +2 to char damage, +3 to SCIENCE, -1 to MELEE, +1 to PRIME
+
+AD.4 FEMALE YOUNGSTER
+20 HP, +1 to char damage, +2 to MELEE, +1 to SCIENCE, +3 to SIDEARMS,
+
+AD.5 FEMALE ADULT
+35 HP, +2 to char damage, +2 to SCIENCE, +3 to SIDEARMS, +2 to PRIME 
+
+AD.6 FEMALE ELDER
+20 HP, +1 to char damage, +6 to SCIENCE, +3 to SIDEARMS, -2 to MELEE
+
+
+
+
+
+
+
+
+
+
+
